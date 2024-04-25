@@ -1,12 +1,17 @@
 # llm-groq
 
+Updated with access to llama3-8b and 70b models via the Groq api.
+
 [LLM](https://llm.datasette.io/) plugin providing access to [Groqcloud](http://console.groq.com) models.
 
 ## Installation
 
-Install this plugin in the same environment as LLM:
+clone repo to your local machine, cd into dir, run cmd 'llm install -e .'
+
 ```bash
-llm install llm-groq
+git clone https://github.com/ssergorp/llm-groq.git
+cd llm-groq
+llm install -e .
 ```
 
 ## Usage
@@ -17,10 +22,12 @@ Configure the key using the `llm keys set groq` command:
 ```bash
 llm keys set groq
 ```
+
 ```
 <paste key here>
 ```
-You can now access the three Mistral hosted models: `groq-llama2` and `groq-mixtral`.
+
+You can now access these hosted models: `groq-llama2`, `groq-llama3-8b`, `groq-llama3-70b`, `groq-gemma` and `groq-mixtral`.
 
 To run a prompt through `groq-mixtral`:
 
